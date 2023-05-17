@@ -1,0 +1,457 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+@font-face {
+  font-family: 'Agrandir-Regular';
+  src: url('../fonts/Agrandir/Agrandir-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Agrandir-WideLight';
+  src: url('../fonts/Agrandir/Agrandir-WideLight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Agrandir-Italic';
+  src: url('../fonts/Agrandir/Agrandir-WideBlackItalic.otf')
+    format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Agrandir-Grandheavy';
+  src: url('../fonts/Agrandir/Agrandir-GrandHeavy.otf')
+    format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Agrandir-Bold';
+  src: url('../fonts/Agrandir/Agrandir-TextBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --custom-green: #fc0c04;
+  --light-custom-green: #caaaa9;
+  --hover-color: #2962f2;
+  --link-color: #0b0230;
+  --font-regular: 'Agrandir-Regular', sans-serif;
+  --font-grand: 'Agrandir-Grandheavy', sans-serif;
+  --font-bold: 'Agrandir-Bold', sans-serif;
+  --font-italic: 'Agrandir-Italic', sans-serif;
+  --font-light: 'Agrandir-WideLight' sans-serif;
+}
+
+html{
+    min-height: 100vh;
+    /* background: linear-gradient(107.93deg, var(--light-custom-green) 0%, var(--light-custom-green) 104.14%); */
+}
+
+.mt-70{
+  margin-top: 70px !important;
+}
+
+.mt-57{
+  margin-top: 57px !important;
+}
+
+.pr-1-rem{
+  padding-right: 1rem !important;
+}
+.navbar a{
+    text-decoration: none;
+    color: var(--custom-green) !important;
+}
+
+.gold {
+  color: #f49b09;
+}
+
+button {
+  border: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  color: inherit;
+}
+
+/* .row{
+    margin-left: 0px !important;
+} */
+
+body {
+  margin: 0;
+  font-family: var(--font-regular);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Login container*/
+.login__container input{
+    height: 50px;
+}
+
+.btn-green{
+    background-color: #14c599;
+    height: 40px;
+}
+
+.navbar__login__btn a{
+  background-color: var(--custom-green) !important;
+  color: #ffffff !important;
+}
+
+.navbar__login__btn a:hover{
+  background-color: var(--light-custom-green) !important;
+  color: #ffffff !important;
+}
+
+.card-header{
+    font-family: var(--font-bold);
+}
+
+.card-title{
+    font-family: var(--font-bold);
+}
+
+.text-green{
+    color: var(--custom-green);
+}
+
+.btn-outline-green{
+  border: 2px solid var(--custom-green);
+}
+
+.btn-outline-green:hover{
+  background-color: var(--custom-green) !important;
+  color: #ffffff !important;
+}
+
+.btn-outline-green:hover .fa{
+  color: #ffffff !important;
+}
+
+.progress-bar-green {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--custom-green);
+    transition: width .6s ease;
+}
+/* Courses container*/
+
+/* #myBtnContainer{
+    margin-left: inherit !important;
+} */
+
+#myBtnContainer .btn {
+  border: none;
+  outline: none;
+  padding: 6px 8px;
+  background-color: var(--light-custom-green);
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+
+
+.filterDiv {
+  margin-bottom: 10px;
+  float: left;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: var(--custom-green) !important;
+  color: #ffffff;
+  border: none !important;
+}
+
+.filterDiv .btn:hover {
+  background-color: var(--custom-green);
+  color: #ffffff;
+}
+
+/*Course Details page*/
+
+.details__header{
+    background-color: var(--light-custom-green);
+}
+
+.timeline-with-icons {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+}
+
+.timeline-with-icons .timeline-item {
+  position: relative;
+}
+
+.timeline-with-icons .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline-with-icons .timeline-icon {
+  position: absolute;
+  left: -48px;
+  background-color: hsl(217, 88.2%, 90%);
+  color: var(--custom-green) !important;
+  border-radius: 50%;
+  height: 31px;
+  width: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user__dropdown .btn{
+    color: #ffffff !important;
+}
+
+.user__dropdown .btn:hover{
+    background-color: var(--custom-green) !important;
+}
+
+#sidebarMenu{
+  background-color: var(--light-custom-green);
+}
+
+/*Take course*/
+.accordion-button{
+    color: var(--custom-green) !important;
+    background-color: #ffffff !important;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+
+.take-course-container a{
+  color: var(--custom-green) !important;
+  text-decoration: none !important;
+}
+
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/menu.png) !important;
+}
+
+
+/*IBB GOLF*/
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid var(--custom-green);
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+.bg-red{
+  background-color: var(--light-custom-green);
+  border-bottom-left-radius: 160px;
+}
+
+.welcome__buttons .btn-red{
+  background-color: var(--custom-green) !important;
+  color: #ffffff !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+}
+
+.welcome__img img{
+  width: 100%;
+}
+
+.mt-20{
+  margin-top: 20px !important;
+}
+
+.mt-30{
+  margin-top: 30px !important;
+}
+
+.mt-40{
+  margin-top: 40px !important;
+}
+
+.welcome__container a{
+  text-decoration: none !important;
+  color: var(--custom-green) !important;
+}
+
+.welcome__buttons{
+  margin-top: 20px;
+}
+
+.service__image img{
+  width: 100%;
+}
+
+footer a{
+  text-decoration: none;
+  color: var(--custom-green);
+}
+
+/*New banner*/
+.animate.pop {
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-duration: 1.5s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  
+}
+
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+.delay-1 {
+  animation-delay: 0.6s;
+}
+    
+.delay-2 {
+  animation-delay: 0.7s;
+}
+    
+.delay-3 {
+  animation-delay: 0.8s;
+}
+
+@media screen and (min-width: 1200px) {
+    .two__card__row{
+        padding: 70px;
+    }
+
+    .details__header{
+        padding: 70px;
+    }
+
+    .dropdown-menu-lg-start[data-bs-popper] {
+        right: -20px !important;
+        left: inherit !important;
+    }
+
+    .welcome__text_container{
+      margin-top: 170px !important;
+    }
+
+    .one__service__title{
+      font-size: 30px !important;
+    }
+
+    .one__service .fa-check-square::before, .one__service .fa-handshake::before {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .dropdown-menu-lg-start[data-bs-popper] {
+        right: -20px !important;
+        left: inherit !important;
+    }
+
+    .btn-red{
+      margin-bottom: 10px !important;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .details__header{
+        padding: 25px;
+    }
+
+    .details__img{
+        text-align: left !important;
+    }
+    .details__img img{
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .btn-red{
+      margin-bottom: 10px !important;
+    }
+
+     .welcome__text_container{
+      margin-top: 50px !important;
+    }
+
+    .services__container{
+      padding: 10px !important;
+    }
+
+    .one__service{
+      margin-bottom: 5px !important;
+    }
+
+    .services__container .service__title{
+      margin-bottom: 6px !important;
+    }
+
+    .why__us{
+      padding: 25px !important;
+      background-color: #caaaa9 !important;
+    }
+}

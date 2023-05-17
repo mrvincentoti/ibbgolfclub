@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/custom.min.css" rel="stylesheet">
+
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/sldeman.js"></script>
+
+    <title>IBB Golf Clud | Home</title>
+  </head>
+  <body style="background-color: #F6F4F2;">
+    <!----/just added-->
+    <font color="#000000"></font>
+    <input type="hidden" name="dst" value="" $(if chap-id) />
+    <form name="sendin" action="$(link-login-only)" method="post">
+      <input type="hidden" name="username" />
+        <input type="hidden" name="password" />
+        <input type="hidden" name="dst" value="" />
+        <input type="hidden" name="popup" value="true" />
+      </form>
+      
+    <font color="#000000">
+      
+    <script type="text/javascript" src="assets/js/md5.js"></script>
+      <script type="text/javascript">
+        function doLogin() {
+          document.sendin.username.value = document.login.username.value;
+          document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+          document.sendin.submit();
+          return false;
+        }
+      </script>
+    </font>
+    <input type="hidden" name="dst" value="" $(endif)/>
+    <!----/end-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+            </li>        
+          </ul>
+          <div class="d-flex">
+            <!-- <a class="btn btn-outline-green" type="submit">Connect to Internet</a> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container welcome__container">
+        <div class="row bg-red p-5">
+          <div class="col-md-7 welcome__text_container">
+            <div class="welcome__text">
+              <h1 class="card-title card-title letters animate pop">Welcome to IBB Golf Club Internet</h1>
+              <span class="animate pop">Experience seamless internet connectivity at IBB Golf Club Powered By <a href="https://www.layer3.ng">Layer3 Limited</a></span>
+            </div>
+            <div class="welcome__buttons mt-5">
+              <!-- <a href="" class="btn btn-red animate pop">Connect to Internet</a>
+              <a href="" class="btn btn-red animate pop">Layer3's Awesome Services</a> -->
+              <form class="row g-3" name="login" action="$(link-login-only)" method="post" onSubmit="return doLogin()">
+                <input type="hidden" name="dst" value="" />
+                <input type="hidden" name="popup" value="true" />
+                <div class="col-auto">
+                  <label for="staticEmail2" class="visually-hidden-1">Username</label>
+                  <input name="username" type="text" class="form-control" id="inputPassword2" placeholder="Username" autofocus="autofocus">
+                </div>
+                <div class="col-auto">
+                  <label for="inputPassword2" class="visually-hidden-1">Password</label>
+                  <input name="password" type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                </div>
+                <div class="col-auto">
+                  <!-- <button type="submit" class="btn btn-red mt-4">Connect to Internet</button> -->
+                  <input name="formbutton1" type="submit" value="Connect to Internet" class="btn btn-red mt-4"/>
+                </div>
+              </form>
+
+              <script type="text/javascript">
+                document.login.username.focus();
+              </script>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="welcome__img">
+              <img class="animate pop" src="assets/img/golf-girl.svg" />
+            </div>
+          </div>
+        </div>
+        <!---/end banner-->
+        <div class="row mt-20 p-5 services__container">
+          <h2 class="card-title mb-5 service__title">Layer3's Services</h2>
+          <div class="col-md-4 one__service">
+            <div class="card shadow-lg" style="border-radius: 10px;">
+              <div class="card-body">
+                <div class="service__image">
+                  <img src="assets/img/fast-ftth.svg" />
+                </div>
+                <h5 class="card-title">FTTH</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Fiber to the home</h6>
+                <p class="card-text">Experience lightning-fast internet speeds and uninterrupted connectivity from the comfort of your own home with Layer3 Fiber-to-the-Home (FTTH) technology.</p>
+                <a href="http://l3fiber.ng/" target="_blank"class="btn btn-outline-green">Find out how..</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 one__service">
+            <div class="card shadow-lg" style="border-radius: 10px;">
+              <div class="card-body">
+                <div class="service__image">
+                  <img src="assets/img/cloud.svg" />
+                </div>
+                <h5 class="card-title">Layer3Cloud</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Nigeria's Leading Cloud Provider</h6>
+                <p class="card-text">Unlock the power of the cloud with LayerCloud - the ultimate solution for seamless, secure, and scalable cloud computing.</p>
+                <a href="https://www.layer3.cloud/" target="_blank" class="btn btn-outline-green">Find out how..</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 one__service">
+            <div class="card shadow-lg" style="border-radius: 10px;">
+              <div class="card-body">
+                <div class="service__image">
+                  <img src="assets/img/analytics-2.svg" />
+                </div>
+                <h5 class="card-title">Analytics</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Insights from Data</h6>
+                <p class="card-text">Gain valuable insights into your business with Layer3 Analytics - the intelligent solution for data-driven decision making.<br/></p>
+                <a href="https://blacksentry.ng/" target="_blank" class="btn btn-outline-green">Find out how..</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-10 p-5 why__us" style="background-color: #ffffff; justify-content: center;">
+          <h2 class="card-title mb-5">Why we are the Best</h2>
+          <p>At Layer3, we pride ourselves on our commitment to delivering reliable and secure services to our clients. Our team of highly skilled professionals is dedicated to ensuring that we provide the best possible service to our customers, and we constantly strive to exceed their expectations.</p>
+          <p>One of the key factors that sets us apart from our competitors is our 24/7 support service. We understand the importance of having access to timely and reliable support, and that is why we have invested heavily in building a team of experts who are available around the clock to assist our clients.</p>
+          <div class="col-md-6 one__service">
+            <div class="card shadow-lg" style="border-radius: 10px; background-color: #ffffff">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="p-2"><i class="fa fa-check-square text-danger" aria-hidden="true"></i></div>
+                  <div class="p-2 card-title one__service__title">100% Trust</div>
+                </div>
+                <!-- <h5 class="card-title"><i class="fa fa-check-square text-danger" aria-hidden="true"></i> 100% Trust</h5> -->
+                <p class="card-text">Trust us to provide you with reliable and secure services - your satisfaction is our top priority<br/></p>
+                <a href="https://www.layer3.ng/contact-us/" target="_blank" class="btn btn-outline-green">Speak to us</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 one__service">
+            <div class="card shadow-lg" style="border-radius: 10px; background-color: #ffffff">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="p-2"><i class="fa fa-handshake text-danger" aria-hidden="true"></i></div>
+                  <div class="p-2 card-title one__service__title">24/7 Support</div>
+                </div>
+                <!-- <h5 class="card-title"><i class="fa fa-handshake text-danger" aria-hidden="true"></i>24/7 Support</h5> -->
+                <p class="card-text">Our dedicated support team is available around the clock to ensure that your needs are met whenever you need us.</p>
+                <a href="https://www.layer3.ng/contact-us/" target="_blank" class="btn btn-outline-green">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 <a href="#">Layer3 Limited</a> </span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/js/bootstrap.5.min.js"></script>
+    <script src="assets/js/custom.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
