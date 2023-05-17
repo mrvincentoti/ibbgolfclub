@@ -44,7 +44,7 @@
 }
 
 :root {
-  --custom-green: #fc0c04;
+  --custom-green: #eb1d33;
   --light-custom-green: #caaaa9;
   --hover-color: #2962f2;
   --link-color: #0b0230;
@@ -292,6 +292,11 @@ body::-webkit-scrollbar {
     transition: box-shadow .15s ease-in-out;
 }
 
+.btn-red{
+  background-color: var(--custom-green);
+  color: #ffffff;
+}
+
 .bg-red{
   background-color: var(--light-custom-green);
   border-bottom-left-radius: 160px;
@@ -320,6 +325,10 @@ body::-webkit-scrollbar {
 
 .mt-40{
   margin-top: 40px !important;
+}
+
+.mt-50{
+  margin-top: 50px !important;
 }
 
 .welcome__container a{
@@ -353,7 +362,23 @@ footer a{
   
 }
 
+.service__image {
+  height: 80px !important;
+}
 
+.service__image img{
+  max-height: 80px !important;
+}
+
+.one__service .card{
+  height: 465px !important;
+}
+
+.one__service .card-footer{
+  text-align: center !important;
+  background-color: #ffffff !important;
+  border: none !important;
+}
 @keyframes animate-pop {
   0% {
     opacity: 0;

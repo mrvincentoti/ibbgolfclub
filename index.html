@@ -71,12 +71,9 @@
         <div class="row bg-red p-5">
           <div class="col-md-7 welcome__text_container">
             <div class="welcome__text">
-              <h1 class="card-title card-title letters animate pop">Welcome to IBB Golf Club Internet</h1>
-              <span class="animate pop">Experience seamless internet connectivity at IBB Golf Club Powered By <a href="https://www.layer3.ng">Layer3 Limited</a></span>
+              <h1 class="card-title card-title letters animate pop">Welcome to IBB Golf Club Internet - <span class="animate pop">Powered By <a href="https://www.layer3.ng">Layer3!</a></span></h1>
             </div>
-            <div class="welcome__buttons mt-5">
-              <!-- <a href="" class="btn btn-red animate pop">Connect to Internet</a>
-              <a href="" class="btn btn-red animate pop">Layer3's Awesome Services</a> -->
+        <!--    <div class="welcome__buttons mt-5">
               <form class="row g-3" name="login" action="$(link-login-only)" method="post" onSubmit="return doLogin()">
                 <input type="hidden" name="dst" value="" />
                 <input type="hidden" name="popup" value="true" />
@@ -89,7 +86,6 @@
                   <input name="password" type="password" class="form-control" id="inputPassword2" placeholder="Password">
                 </div>
                 <div class="col-auto">
-                  <!-- <button type="submit" class="btn btn-red mt-4">Connect to Internet</button> -->
                   <input name="formbutton1" type="submit" value="Connect to Internet" class="btn btn-red mt-4"/>
                 </div>
               </form>
@@ -97,7 +93,7 @@
               <script type="text/javascript">
                 document.login.username.focus();
               </script>
-            </div>
+            </div> -->
           </div>
           <div class="col-md-5">
             <div class="welcome__img">
@@ -106,22 +102,36 @@
           </div>
         </div>
         <!---/end banner-->
-        <div class="row mt-20 p-5 services__container">
+
+        <div class="row mt-20 p-3 service__banner">
+          <div class="col-md-12">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <img class="animate pop" src="assets/img/service-banner.png" style="width: 100%"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/service banner-->
+
+        <div class="row mt-20 p-3 services__container">
           <h2 class="card-title mb-5 service__title">Layer3's Services</h2>
-          <div class="col-md-4 one__service">
+          <div class="col-md-3 one__service">
             <div class="card shadow-lg" style="border-radius: 10px;">
               <div class="card-body">
                 <div class="service__image">
                   <img src="assets/img/fast-ftth.svg" />
                 </div>
-                <h5 class="card-title">FTTH</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Fiber to the home</h6>
-                <p class="card-text">Experience lightning-fast internet speeds and uninterrupted connectivity from the comfort of your own home with Layer3 Fiber-to-the-Home (FTTH) technology.</p>
+                <h5 class="card-title">L3fiber</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Fiber-to-the-home</h6>
+                <p class="card-text">Experience the ultimate broadband revolution with L3Fiber with lightning-fast internet speeds, crystal-clear communication, and limitless possibilities.</p>
+              </div>
+              <div class="card-footer">
                 <a href="http://l3fiber.ng/" target="_blank"class="btn btn-outline-green">Find out how..</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 one__service">
+          <div class="col-md-3 one__service">
             <div class="card shadow-lg" style="border-radius: 10px;">
               <div class="card-body">
                 <div class="service__image">
@@ -129,31 +139,48 @@
                 </div>
                 <h5 class="card-title">Layer3Cloud</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Nigeria's Leading Cloud Provider</h6>
-                <p class="card-text">Unlock the power of the cloud with LayerCloud - the ultimate solution for seamless, secure, and scalable cloud computing.</p>
+                <p class="card-text">Unlock the power of the cloud with LayerCloud - the ultimate solution for seamless, secure, and scalable cloud computing hosted in Nigeria.</p>
+              </div>
+              <div class="card-footer">
                 <a href="https://www.layer3.cloud/" target="_blank" class="btn btn-outline-green">Find out how..</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 one__service">
+          <div class="col-md-3 one__service">
             <div class="card shadow-lg" style="border-radius: 10px;">
               <div class="card-body">
                 <div class="service__image">
                   <img src="assets/img/analytics-2.svg" />
                 </div>
-                <h5 class="card-title">Analytics</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Insights from Data</h6>
-                <p class="card-text">Gain valuable insights into your business with Layer3 Analytics - the intelligent solution for data-driven decision making.<br/></p>
-                <a href="https://blacksentry.ng/" target="_blank" class="btn btn-outline-green">Find out how..</a>
+                <h5 class="card-title">Network Solutions</h5>
+                <p class="card-text">Empower your business with our cutting-edge network solutions. From robust infrastructure to unmatched reliability, we optimize your digital landscape for flawless performance.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://layer3.ng/" target="_blank" class="btn btn-outline-green">Find out how..</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 one__service">
+            <div class="card shadow-lg" style="border-radius: 10px;">
+              <div class="card-body">
+                <div class="service__image">
+                  <img src="assets/img/analytics-2.svg" />
+                </div>
+                <h5 class="card-title">Enterprise Broadband Service</h5>
+                <p class="card-text">Empower your business with Layer3 Broadband! Unleash unstoppable connectivity for your business. Experience lightning-fast speeds, unwavering reliability, and limitless scalability. Propel your operations to new heights with Layer3 Broadband!</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://layer3.ng/" target="_blank" class="btn btn-outline-green">Find out how..</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row mt-10 p-5 why__us" style="background-color: #ffffff; justify-content: center;">
+        <div class="row mt-10 p-5 why__us mt-50" style="background-color: #ffffff; justify-content: center;">
           <h2 class="card-title mb-5">Why we are the Best</h2>
-          <p>At Layer3, we pride ourselves on our commitment to delivering reliable and secure services to our clients. Our team of highly skilled professionals is dedicated to ensuring that we provide the best possible service to our customers, and we constantly strive to exceed their expectations.</p>
-          <p>One of the key factors that sets us apart from our competitors is our 24/7 support service. We understand the importance of having access to timely and reliable support, and that is why we have invested heavily in building a team of experts who are available around the clock to assist our clients.</p>
-          <div class="col-md-6 one__service">
+          <p>We pride ourselves on our commitment to delivering reliable and secure services to our clients. Our team of highly skilled professionals is dedicated to providing the best possible service to our customers, and we constantly strive to exceed their expectations.</p>
+          <p>One of the key factors that sets us apart is our excellent 24/7 support service. We understand the importance of having access to timely and reliable support, and that is why we have invested heavily in building a team of experts who are available around the clock to assist our clients.</p>
+          <div class="col-md-6 the__best">
             <div class="card shadow-lg" style="border-radius: 10px; background-color: #ffffff">
               <div class="card-body">
                 <div class="d-flex">
@@ -167,7 +194,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 one__service">
+          <div class="col-md-6 the__best">
             <div class="card shadow-lg" style="border-radius: 10px; background-color: #ffffff">
               <div class="card-body">
                 <div class="d-flex">
@@ -177,6 +204,35 @@
                 <!-- <h5 class="card-title"><i class="fa fa-handshake text-danger" aria-hidden="true"></i>24/7 Support</h5> -->
                 <p class="card-text">Our dedicated support team is available around the clock to ensure that your needs are met whenever you need us.</p>
                 <a href="https://www.layer3.ng/contact-us/" target="_blank" class="btn btn-outline-green">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-10 p-5 why__us mt-50" style="background-color: #ffffff; justify-content: center;">
+          <h2 class="card-title mb-5 text-center">Login to connect to the Internet</h2>
+          <div class="col-md-6 the__best">
+            <div class="card shadow-lg" style="border-radius: 10px; background-color: #ffffff">
+              <div class="card-body">
+                <form class="row g-3" name="login" action="$(link-login-only)" method="post" onSubmit="return doLogin()">
+                  <input type="hidden" name="dst" value="" />
+                  <input type="hidden" name="popup" value="true" />
+                  <div class="col-12">
+                    <label for="staticEmail2" class="visually-hidden-1">Username</label>
+                    <input name="username" type="text" class="form-control" id="inputPassword2" placeholder="" autofocus="autofocus">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputPassword2 text-left" class="visually-hidden-1">Password</label>
+                    <input name="password" type="password" class="form-control" id="inputPassword2" placeholder="">
+                  </div>
+                  <div class="col-auto">
+                    <input name="formbutton1" type="submit" value="Connect to Internet" class="btn btn-red mt-4"/>
+                  </div>
+                </form>
+
+                <script type="text/javascript">
+                  document.login.username.focus();
+                </script>
               </div>
             </div>
           </div>
