@@ -333,7 +333,14 @@ body::-webkit-scrollbar {
 
 .welcome__container a{
   text-decoration: none !important;
-  color: var(--custom-green) !important;
+  /* color: var(--custom-green) !important; */
+}
+
+.banner{
+  background-image: url("../img/bg.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .welcome__buttons{
@@ -379,6 +386,8 @@ footer a{
   background-color: #ffffff !important;
   border: none !important;
 }
+
+
 @keyframes animate-pop {
   0% {
     opacity: 0;

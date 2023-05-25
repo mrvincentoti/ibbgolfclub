@@ -68,10 +68,10 @@
     </nav>
     
     <div class="container welcome__container">
-        <div class="row bg-red p-5">
+        <div class="row bg-red p-5 banner">
           <div class="col-md-7 welcome__text_container">
-            <div class="welcome__text">
-              <h1 class="card-title card-title letters animate pop">Welcome to IBB Golf Club Internet - <span class="animate pop">Powered By <a href="https://www.layer3.ng">Layer3!</a></span></h1>
+            <div class="welcome__text mb-5">
+              <h1 class="card-title card-title letters animate pop text-white">Welcome to IBB Golf Club Internet - <span class="animate pop text-white">Powered By <a href="https://www.layer3.ng" class="text-white">Layer3!</a></span></h1>
             </div>
         <!--    <div class="welcome__buttons mt-5">
               <form class="row g-3" name="login" action="$(link-login-only)" method="post" onSubmit="return doLogin()">
@@ -95,11 +95,11 @@
               </script>
             </div> -->
           </div>
-          <div class="col-md-5">
+          <!-- <div class="col-md-5">
             <div class="welcome__img">
               <img class="animate pop" src="assets/img/golf-girl.svg" />
             </div>
-          </div>
+          </div> -->
         </div>
         <!---/end banner-->
 
@@ -221,7 +221,7 @@
                   <input type="hidden" name="popup" value="true" />
                   <div class="col-12">
                     <label for="staticEmail2" class="visually-hidden-1">Username</label>
-                    <input name="username" type="text" class="form-control" id="inputPassword2" placeholder="" autofocus="autofocus">
+                    <input name="username" type="text" class="form-control" id="inputPassword2" placeholder="">
                   </div>
                   <div class="col-12">
                     <label for="inputPassword2 text-left" class="visually-hidden-1">Password</label>
@@ -231,10 +231,6 @@
                     <input name="formbutton1" type="submit" value="Connect to Internet" class="btn btn-red mt-4"/>
                   </div>
                 </form>
-
-                <script type="text/javascript">
-                  document.login.username.focus();
-                </script>
               </div>
             </div>
           </div>
